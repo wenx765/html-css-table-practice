@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>課表</title>
+    <style>
+      table {
+        width: 600px;
+        table-layout: fixed;
+        border-collapse: collapse;
+        text-align: center;
+        vertical-align: middle;
+      }
+      tr {
+        height: 40px;
+      }
+      th,
+      td {
+        border: 1.7px solid rgb(121, 121, 121);
+      }
+      .full-width {
+        letter-spacing: 3em;
+        padding-left: 3em;
+      }
+      .small-font {
+        font-size: 13px;
+      }
+      .diagonal-cell {
+        position: relative;
+        background: linear-gradient(
+          to top right,
+          transparent 49.5%,
+          #000000 50%,
+          transparent 50.5%
+        );
+      }
+
+      .diagonal-cell .top {
+        position: absolute;
+        top: 2px;
+        right: 5px;
+      }
+
+      .diagonal-cell .bottom {
+        position: absolute;
+        bottom: 2px;
+        left: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        【 課 表 】
+      </caption>
+      <colgroup>
+        <col style="width: 12%" />
+        <col style="width: 5%" span="2" />
+        <col style="width: 9%" />
+        <col style="width: 5%" />
+        <col style="width: 13%" span="5" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th class="small-font">授課教師</th>
+          <th class="small-font">
+            時<br />
+            段
+          </th>
+          <th class="small-font">
+            節<br />
+            次
+          </th>
+          <th class="diagonal-cell" colspan="2">
+            <span class="top small-font">星 期</span>
+            <span class="bottom small-font">時 間</span>
+          </th>
+          <th>一</th>
+          <th>二</th>
+          <th>三</th>
+          <th>四</th>
+          <th>五</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th rowspan="15">
+            【國語】<br />
+            【數學】<br />
+            【社會】<br />
+            【綜合】<br />
+            李昀軒 <br />
+            <br />
+            【英語】<br />
+            陳巧慧 <br />
+            <br />
+            【自然】<br />
+            蔣良修 <br />
+            <br />
+            【美勞】<br />
+            蔡秀婷 <br />
+            <br />
+            【音樂】<br />
+            蘇敬堯 <br />
+            <br />
+            【體育】<br />
+            林俊良 <br />
+            <br />
+            【健康】<br />
+            柯雯婷 <br />
+            <br />
+            【電腦】<br />
+            曾瑞斌 <br />
+            <br />
+            【母語】<br />
+            黃振彬 <br />
+          </th>
+          <th class="small-font" rowspan="8">
+            上<br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            午
+          </th>
+          <th rowspan="2"></th>
+          <th class="small-font" rowspan="2">
+            07:50 <br />
+            | <br />
+            08:00
+          </th>
+          <th rowspan="2">10</th>
+          <td>運動服</td>
+          <td>制服</td>
+          <td>便服</td>
+          <td>運動服</td>
+          <td>制服</td>
+        </tr>
+
+        <tr>
+          <td class="full-width" colspan="5">晨光活動</td>
+        </tr>
+        <tr>
+          <th>0</th>
+          <th class="small-font">
+            08:00 <br />
+            | <br />
+            08:40
+          </th>
+          <th>40</th>
+          <td class="small-font">戶外朝會</td>
+          <td class="small-font">室內朝會</td>
+          <td>社會</td>
+          <td class="small-font">深耕閱讀</td>
+          <td class="small-font">室內朝會</td>
+        </tr>
+        <tr>
+          <th>1</th>
+          <th class="small-font">
+            08:45 <br />
+            | <br />
+            09:25
+          </th>
+          <th>40</th>
+          <td>數學</td>
+          <td>綜合</td>
+          <td>自然</td>
+          <td>數學</td>
+          <td>數學</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <th class="small-font">
+            09:35 <br />
+            | <br />
+            10:15
+          </th>
+          <th>40</th>
+          <td>英語</td>
+          <td>綜合</td>
+          <td>自然</td>
+          <td>健康</td>
+          <td>國語</td>
+        </tr>
+        <tr>
+          <th></th>
+          <th class="small-font">
+            10:15 <br />
+            | <br />
+            10:35
+          </th>
+          <th>20</th>
+          <td class="full-width" colspan="5">課間活動</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <th class="small-font">
+            10:35 <br />
+            | <br />
+            11:15
+          </th>
+          <th>40</th>
+          <td>國語</td>
+          <td>母語</td>
+          <td>數學</td>
+          <td>國語</td>
+          <td>美勞</td>
+        </tr>
+        <tr>
+          <th>4</th>
+          <th class="small-font">
+            11:25 <br />
+            | <br />
+            12:05
+          </th>
+          <th>40</th>
+          <td>國語</td>
+          <td>國語</td>
+          <td>國語</td>
+          <td>美語</td>
+          <td>美勞</td>
+        </tr>
+        <tr>
+          <th class="small-font" rowspan="7">
+            下<br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            午
+          </th>
+          <th rowspan="2"></th>
+          <th class="small-font">
+            12:05 <br />
+            | <br />
+            12:35
+          </th>
+          <th>30</th>
+          <td class="full-width" colspan="5">午餐時間</td>
+        </tr>
+        <tr>
+          <th class="small-font">
+            12:35 <br />
+            | <br />
+            13:20
+          </th>
+          <th>45</th>
+          <td class="full-width" colspan="5">午間靜息</td>
+        </tr>
+        <tr>
+          <th>5</th>
+          <th class="small-font">
+            13:30 <br />
+            | <br />
+            14:10
+          </th>
+          <th>40</th>
+          <td>綜合</td>
+          <td>英語</td>
+          <td></td>
+          <td>社會</td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>6</th>
+          <th class="small-font">
+            14:20 <br />
+            | <br />
+            15:00
+          </th>
+          <th>40</th>
+          <td>體育</td>
+          <td>電腦</td>
+          <td></td>
+          <td>音樂</td>
+          <td></td>
+        </tr>
+        <tr>
+          <th></th>
+          <th class="small-font">
+            15:00 <br />
+            | <br />
+            15:20
+          </th>
+          <th>20</th>
+          <td class="full-width" colspan="5">整潔活動</td>
+        </tr>
+        <tr>
+          <th>7</th>
+          <th class="small-font">
+            15:20 <br />
+            | <br />
+            16:00
+          </th>
+          <th>40</th>
+          <td>自然</td>
+          <td>社會</td>
+          <td></td>
+          <td>體育</td>
+          <td></td>
+        </tr>
+        <tr>
+          <th></th>
+          <th class="small-font">
+            16:00 <br />
+            | <br />
+            16:10
+          </th>
+          <th>10</th>
+          <td class="full-width" colspan="5">放學</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
