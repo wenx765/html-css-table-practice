@@ -1,0 +1,42 @@
+table {
+  width: 600px;
+  table-layout: fixed;
+  border-collapse: collapse;
+  text-align: center;
+  vertical-align: middle;
+}
+tr {
+  height: 40px;
+}
+th,
+td {
+  border: 1.7px solid rgb(121, 121, 121);
+}
+.full-width {
+  letter-spacing: 3em;
+  padding-left: 3em;
+}
+.small-font {
+  font-size: 13px;
+}
+.diagonal-cell {
+  position: relative;
+  background: linear-gradient(
+    to top right,
+    transparent 49.5%,
+    #000000 50%,
+    transparent 50.5%
+  );
+}
+
+.diagonal-cell .top {
+  position: absolute;
+  top: 2px;
+  right: 5px;
+}
+
+.diagonal-cell .bottom {
+  position: absolute;
+  bottom: 2px;
+  left: 5px;
+}
